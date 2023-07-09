@@ -1,0 +1,10 @@
+.detail-container {
+  display: flex;
+  gap: 1rem;
+  text-align: left;
+}
+
+.detail-container div {
+  text-align: left;
+  margin-bottom: 1rem;
+}

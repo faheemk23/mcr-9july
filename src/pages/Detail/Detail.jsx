@@ -30,15 +30,32 @@ export function Detail() {
   return (
     <div>
       <h1>{name}</h1>
-      <div>
+      <div className="detail-container">
         <img src={image} height="300px" width="300px" />
         <div>
-          <div>description: {description}</div>
-          <div>ratings:{ratings}</div>
-          <div>reviews: {reviews}</div>
-          <div>location: {location}</div>
-          <div>openingHours: {openingHours}</div>
-          <div>ticketPrice: {ticketPrice}</div>
+          <div>
+            <span className="blue">Description</span> : {description}
+          </div>
+          <div>
+            {" "}
+            <span className="blue">Ratings:</span> {ratings}
+          </div>
+          <div>
+            {" "}
+            <span className="blue">Reviews:</span> {reviews}
+          </div>
+          <div>
+            {" "}
+            <span className="blue">Location:</span> {location}
+          </div>
+          <div>
+            {" "}
+            <span className="blue">Opening Hours:</span> {openingHours}
+          </div>
+          <div>
+            {" "}
+            <span className="blue">Ticket Price:</span> {ticketPrice}
+          </div>
           <a href={website} target="_blank">
             Website
           </a>
