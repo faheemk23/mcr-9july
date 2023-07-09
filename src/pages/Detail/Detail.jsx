@@ -15,9 +15,27 @@ export function Detail() {
   const destination = country.destinations.find(
     ({ id }) => id === Number(destinationId)
   );
+
+  const {
+    name,
+    website,
+    ticketPrice,
+    openingHours,
+    location,
+    reviews,
+    ratings,
+    image,
+    description,
+  } = destination;
   return (
     <div>
-      <h1>{destination.name}</h1>
+      <h1>{name}</h1>
+      <div>
+        <img src={image} height="300px" width="300px" />
+        <div>
+          <div>{description}</div>
+        </div>
+      </div>
     </div>
   );
 }
