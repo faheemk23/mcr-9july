@@ -33,7 +33,15 @@ export function Detail() {
       <div>
         <img src={image} height="300px" width="300px" />
         <div>
-          <div>{description}</div>
+          <div>description: {description}</div>
+          <div>ratings:{ratings}</div>
+          <div>reviews: {reviews}</div>
+          <div>location: {location}</div>
+          <div>openingHours: {openingHours}</div>
+          <div>ticketPrice: {ticketPrice}</div>
+          <a href={website} target="">
+            Website
+          </a>
         </div>
       </div>
     </div>
