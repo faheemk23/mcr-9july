@@ -1,0 +1,26 @@
+.card {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.card img {
+  border-radius: 0.5rem;
+}
+
+.card-name {
+  position: absolute;
+  left: 25px;
+  bottom: 35px;
+  background: none;
+  font-size: large;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+svg {
+  background: none;
+}
