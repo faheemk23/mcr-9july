@@ -39,7 +39,7 @@ export function Detail() {
           <div>location: {location}</div>
           <div>openingHours: {openingHours}</div>
           <div>ticketPrice: {ticketPrice}</div>
-          <a href={website} target="">
+          <a href={website} target="_blank">
             Website
           </a>
         </div>
