@@ -16,7 +16,10 @@ function App() {
           path="/Destinations/:continentId/:countryId"
           element={<Destinations />}
         />
-        <Route path="/detail" element={<Detail />} />
+        <Route
+          path="/detail/:continentId/:countryId/:destinationId"
+          element={<Detail />}
+        />
       </Routes>
     </div>
   );

@@ -7,8 +7,10 @@ export function Card({
   id,
   countryId,
   continentId,
+  destinationId,
   inContinent,
   inCountries,
+  inDestination,
 }) {
   const navigate = useNavigate();
 
@@ -17,6 +19,8 @@ export function Card({
       navigate(`/countries/${id}`);
     } else if (inCountries) {
       navigate(`/destinations/${continentId}/${countryId}`);
+    } else if (inDestination) {
+      navigate(`/detail/${continentId}/${countryId}/${destinationId}`);
     }
   };
   return (

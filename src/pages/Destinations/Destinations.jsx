@@ -20,7 +20,15 @@ export function Destinations() {
       <h1>Top destinations in {country.name} for your next holiday</h1>
       <div className="dest-container">
         {destinations.map(({ id, name, image }) => (
-          <Card key={id} image={image} name={name} />
+          <Card
+            continentId={continentId}
+            countryId={countryId}
+            destinationId={id}
+            key={id}
+            image={image}
+            name={name}
+            inDestination
+          />
         ))}
       </div>
     </div>
